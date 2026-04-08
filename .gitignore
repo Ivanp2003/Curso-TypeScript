@@ -3,3 +3,5 @@ node_modules/
 
 # Archivos compilados
 dist/
+
+package-lock.json
