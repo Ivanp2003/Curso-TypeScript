@@ -1,0 +1,36 @@
+//Enum es un conjunto de constantes nombradas
+//Por defecto comienzan desde cero y se incrementan en uno
+
+enum EstadoPedido{
+    Inicial,
+    EnProceso,
+    Enviando,
+    Recibido
+}
+
+let estado:EstadoPedido;
+
+estado= EstadoPedido.Enviando;
+console.log("Estado del pedido = ",estado);
+
+
+enum EstadoCompra{
+    Inicial="I",
+    Facturado="F",
+    Devuelto="D"
+}
+
+let estadoC:EstadoCompra;
+estadoC= EstadoCompra.Devuelto;
+console.log("Estado de la compra = ",estadoC);
+
+
+enum CodigoError{
+    Ok=100,
+    ErrorRed=200,
+    ErrorBDD=300
+}
+
+let codigoE:CodigoError;
+codigoE= CodigoError.ErrorRed;
+console.log("Codigo de error = ",codigoE);
